@@ -1,0 +1,16 @@
+name: test
+on:
+  - push
+  - pull_request
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        deno: [v1.x]
+    steps:
+      - uses: actions/checkout@master
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: ${{ matrix.deno }}
+      - run: deno run ./validate.test.ts

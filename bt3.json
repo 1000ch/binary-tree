@@ -1,0 +1,18 @@
+{
+  "value": 17,
+  "left": {
+    "value": 14,
+    "left": {
+      "value": 10
+    },
+    "right": {
+      "value": 16
+    }
+  },
+  "right": {
+    "value": 19,
+    "left": {
+      "value": 18
+    }
+  }
+}
